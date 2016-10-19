@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<title>Herbal Land</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+    .active {
+        background-color: #717171;
+    }
+    /* Fading animation */
+    
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    /* On smaller screens, decrease text size */
+    
+    @media only screen and (max-width: 300px) {
+        .text {
+            font-size: 11px
+        }
+    }
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif
+    }
+    
+    .w3-navbar,
+    h1,
+    button {
+        font-family: "Montserrat", sans-serif
+    }
+    
+    .fa-anchor,
+    .fa-coffee {
+        font-size: 200px
+    }
+    
+    .select-border,
+    .hover-border:hover {
+        color: #fff!important;
+        background-color: transparent !important;
+        border-width: 1px;
+        border-style: dotted;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .product-description {
+        color: aliceblue;
+    }
+    
+    .card {
+        box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 30%;
+        float: left;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    
+    .card:hover {
+        box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .container {
+        padding: 2px 16px;
+    }
+    
+    img {
+        border-radius: 4px 4px 0 0;
+    }
+    
+    .mySlides {
+        display: none;
+    }
+    
+    .mySlides1 {
+        display: none;
+    }
+    
+    .slideshow-container {
+        position: relative;
+        width: 100%;
+        max-height: 100vh;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <ul class="w3-navbar w3-left-align w3-large">
+            <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            </li>
+            <li class="w3-hide-small"> <a href="#" class="w3-padding-large hover-border">Contact Us</a> </li>
+            <li class="w3-hide-small"> <a href="#" class="w3-padding-large hover-border"> Store</a> </li>
+            <li class="w3-hide-small"> <a href="#" class="w3-padding-large hover-border"> Products</a> </li>
+            <li class="w3-hide-small"> <a href="index.html" class="w3-padding-large select-border ">Home</a> </li>
+            <a href="index.html" class="w3-hide-small "> <img src="Herballand.png" alt="Herbal Land" width="244" height="184" style="-webkit-filter: drop-shadow(5px 5px 5px #616161); filter: drop-shadow(5px 5px 5px #616161);">
+        </ul>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+            <ul class="w3-navbar w3-left-align w3-large w3-black">
+                <li><a class="w3-padding-large" href="#">Home</a></li>
+                <li><a class="w3-padding-large" href="#">Products</a></li>
+                <li><a class="w3-padding-large" href="#">Store</a></li>
+                <li><a class="w3-padding-large" href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Sliders-->
+    <header>
+        <div class="slideshow-container">
+            <img class="mySlides" src="one.jpg" style="width:100%">
+            <img class="mySlides" src="hero.png" style="width:100%">
+            <img class="mySlides" src="three.jpg" style="width:100%">
+            <img class="mySlides" src="hero.png" style="width:100%">
+
+        </div>
+
+    </header>
+
+    <div class="w3-image w3-center w3-padding-128">
+        <figure> <img src="xtrapower-box.png" style="width:214px;height:453px;float:left;margin-left:150px"> </figure>
+        <section class="product-description" style="content:block"> <img src="Phyto%20Xtra%20Power%20logo.png" alt="Phyto Xtra Power" style="width:387px;height:264px;">
+            <!-- <h1 class="w3-jumbo">PHYTO<br>X-TRA<br>POWER</h1>-->
+            <p class="w3-xlarge"> <strong>PHYTO XTRA POWER </strong>is a unique formulation derived from nature's gift, with the help of vast experience &amp; researches of scientist &amp; ultimate science of health- Ayurveda. This is a non-hormonal, efficacious &amp; safe aphrodisiac formulation made from the extracts of very rare herbs &amp; medicinal plants which have strengthening &amp; rejuvenating properties.</p>
+            <button class="w3-btn w3-padding-16 w3-large">Buy Now</button>
+        </section>
+    </div>
+    <!--Cards babe-->
+    <div class="w3-center w3-padding-128 w3-container">
+        <div class="w3-content">
+            <div class="card"> <img src="v1.jpg" alt="Avatar" style="width:100%">
+                <div class="container w3-center">
+                    <h4><b>ECSTASY</b></h4>
+                </div>
+            </div>
+            <div class="card"> <img src="v2.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>ENTHUSIASM</b></h4>
+                </div>
+            </div>
+            <div class="card"> <img src="v3.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>EXCITEMENT</b></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- First Grid -->
+
+    <div class="w3-content w3-center" style="max-width:100%">
+        <div class="mySlides1  w3-red w3-container w3-animate-right">
+            <h1><b><i>Having Xtra-Power was one of the most important gifts I ever gave myself.</i></b></h1>
+            <h2><b><i>- Manoj, Bangalore</i></b></h2>
+        </div>
+        <div class="mySlides1  w3-blue w3-container w3-animate-right">
+            <h1><b><i>I am so grateful that I found Xtra-Power, the difference it has made in my life is incredible.</i></b></h1>
+            <h2><b><i>- Pooja Kaur,Haryana</i></b></h2>
+        </div>
+        <div class="mySlides1  w3-green w3-container w3-animate-right">
+            <h1><b><i>Helped to overcome my low sex life</i></b></h1>
+            <h2><b><i>- Ravi, Bangalore</i></b></h2>
+        </div>
+    </div>
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+        <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center  w3-opacity">
+        <address style="padding-left:20px"><a href="mailto:info@herballand.in">Write to us</a>.<br>
+JP Square, Plot no. 190<br>
+2nd Main Rd, Sadashiva Nagar<br>
+Armane Nagar<br>
+Bengaluru<br>
+Karnataka 560080
+</address>
+        <div class="w3-xlarge w3-padding-32">
+            <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+            <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+            <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <p>&copy;Herbal Land&trade;2016</p>
+    </footer>
+    <!-- Slider -->
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <!--Carousel-2-->
+    <script>
+        var slideIndex = 0;
+        carousel2();
+
+        function carousel2() {
+            var i;
+            var x = document.getElementsByClassName("mySlides1");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel2, 4000);
+        }
+    </script>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
